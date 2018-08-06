@@ -1,5 +1,44 @@
+/*
+    main.css by Vincent Klijn LRPS 
+    <https://www.vincentklijnux.eu>
+    created 2016-12-26
+
+    Copyright (c) 2018 Vincent Klijn UX
+    This file may be used for personal educational purposes as needed. 
+    Use for other purposes is granted provided that this notice is
+    retained and any changes made are clearly indicated as such. 
+
+    version 1.0.1 - vk 2018-08-06
+*/
+
+/* -------- color guide ----------
+#3c6b92 : main blue
+#6acce2 : light blue
+#2c566a : teal accent
+#193742 : dark blue
+#e1d8b9 : sand accent
+#cb7d20 : orange accent
+#51341a : brown
+#995522 : dark orange (used for links or high contrast accents)
+#cb202a : red accent (this color does not encode well, use only for small accents)
+#896287 : purple
+*/
+
+/* reasonable reset */
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, table, tr, td,
+p, blockquote, address, time, span, em, strong, img, ol, ul, li, dl, dt, figure, canvas, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body  {
+    font-family: Georgia, serif;    /* default page font */
+    background-color: #3c6b92;
+}
+
 /* Layout */
-.content {
+#container {
     display: flex;
     padding: 2em;
     height: 90vh;
@@ -7,7 +46,22 @@
     align-items: middle;
 }
 
-.clockbox,
+/* div styles */
+#content {
+    width: 85%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    min-height: 600px;
+}
+
+/* header styles */
+#content h1 {
+    font: normal 1.4em Helvetica, Arial, sans-serif;
+    color: #3c6b92;
+    border-bottom: solid 2px #3c6b92;
+}
+
 #clock {
     width: 100%;
 }
